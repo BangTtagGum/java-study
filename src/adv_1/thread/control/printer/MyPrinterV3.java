@@ -1,6 +1,6 @@
 package adv_1.thread.control.printer;
 
-import static util.MyLogger.log;
+import static adv_1.util.MyLogger.log;
 
 import java.util.Queue;
 import java.util.Scanner;
