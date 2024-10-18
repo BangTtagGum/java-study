@@ -1,7 +1,8 @@
 package adv_1.thread.sync.lock;
 
-import static util.MyLogger.log;
-import static util.ThreadUtils.sleep;
+
+import static adv_1.util.MyLogger.log;
+import static adv_1.util.ThreadUtils.sleep;
 
 import java.util.concurrent.locks.LockSupport;
 

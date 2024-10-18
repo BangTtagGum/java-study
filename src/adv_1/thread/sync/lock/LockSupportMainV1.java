@@ -1,7 +1,7 @@
 package adv_1.thread.sync.lock;
 
-import static util.MyLogger.log;
-import static util.ThreadUtils.sleep;
+import static adv_1.util.MyLogger.log;
+import static adv_1.util.ThreadUtils.sleep;
 
 import java.util.concurrent.locks.LockSupport;
 
@@ -17,7 +17,7 @@ public class LockSupportMainV1 {
 
         log("main -> unpark(Thread-1)");
         LockSupport.unpark(thread1); // 1. unpark 사용
-        //thread1.interrupt(); // 2. interrupt() 사용
+        thread1.interrupt(); // 2. interrupt() 사용
     }
 
     static class ParkTest implements Runnable {
